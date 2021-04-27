@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "start": "node server.js"
+    },
+    "cjs": true,
+    "dependencies": {
+        "express": "^4.17.1",
+        "requirejs": "^2.3.6"
+    }
+}
