@@ -2,7 +2,10 @@
     "scripts": {
         "start": "node server.js"
     },
-    "cjs": true,
+    "name": "frogger",
+    "engines": {
+        "node": "14.15.4"
+    },
     "dependencies": {
         "express": "^4.17.1",
         "requirejs": "^2.3.6"
