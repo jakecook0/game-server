@@ -7,26 +7,13 @@
   <title>Frogger</title>
 </head>
 
-<!-- <body onload="MyGame.game.initialize();"> -->
-
 <body>
-  <!-- <script type="text/javascript">
-    let MyGame = {
-      screens: {},
-      input: {},
-      objects: {
-        objs: {
-          player: {},
-          backgrounds: {},
-          cars: { semi: [], firetruck: [], sedan: [], police: [], sports: [] },
-          floats: { log: [], turtle: [], turtleRender: [] },
-          homeFrogs: [],
-        }
-      },
-      render: {},
-    };
-  </script> -->
+
   <div id="game">
+    <div id="loading" class="screen active">
+      <h1>LOADING GAME...</h1>
+    </div>
+
     <div id="main-menu" class="screen">
       <ul class="menu">
         <li><button type="button" id="id-new-game">New Game</button></li>
@@ -37,7 +24,6 @@
     </div>
     <div id="game-play" class="screen">
       <canvas id="game-canvas" width="800" height="700"></canvas>
-      <!-- <button id="game-play-menu" type="button">Main Menu</button> -->
     </div>
     <div id="high-scores" class="screen">
       <h1>High Scores</h1>
@@ -65,33 +51,6 @@
       <h4>Developed by: Jake Cook</h4>
     </div>
   </div>
-  <!-- Load objects, inputs, resources first -->
-  <!-- <script src="scripts/input-mouse.js" charset="utf-8"></script>
-  <script src="scripts/objects/particles.js" charset="utf-8"></script>
-  
-  <script src="scripts/random.js " charset="utf-8"></script>
-  <script src="scripts/input-keyboard.js" charset="utf-8"></script>
-  <script src="scripts/objects/frog.js" charset="utf-8"></script>
-  <script src="scripts/objects/spawner.js" charset="utf-8"></script>
-  <script src="scripts/objects/turtle.js" charset="utf-8"></script>
-  <script src="scripts/objects/overlay.js" charset="utf-8"></script>
-  <script src="scripts/audio.js" charset="utf-8"></script>
-  <script src="scripts/storage.js" charset="utf-8"></script>
-  <script src="scripts/rendering/graphics.js" charset="utf-8"></script>
-  <script src="scripts/collisions.js" charset="utf-8"></script>
-  <script src="scripts/rendering/animated-model.js" charset="utf-8"></script>
-  <script src="scripts/rendering/backgrounds.js" charset="utf-8"></script>
-  <script src="scripts/rendering/obstacles.js" charset="utf-8"></script>
-  <script src="scripts/objects/object-management.js" charset="utf-8"></script>
-
-  <script src="scripts/game.js" charset="utf-8"></script>
-  <script src="scripts/gamemodel.js" charset="utf-8"></script>
-
-  <script src="scripts/screens/mainmenu.js" charset="utf-8"></script>
-  <script src="scripts/screens/highscores.js" charset="utf-8"></script>
-  <script src="scripts/screens/settings.js" charset="utf-8"></script>
-  <script src="scripts/screens/help-about.js" charset="utf-8"></script>
-  <script src="scripts/screens/gameplay.js" charset="utf-8"></script> -->
 
   <script data-main="scripts/loader" src="scripts/require.js"></script>
 
