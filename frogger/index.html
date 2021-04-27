@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./styles/game.css">
+  <title>Frogger</title>
+</head>
+
+<body>
+
+  <div id="game">
+    <div id="loading" class="screen active">
+    </div>
+
+    <div id="main-menu" class="screen">
+      <ul class="menu">
+        <li><button type="button" id="id-new-game">New Game</button></li>
+        <li><button type="button" id="id-high-scores">High Scores</button></li>
+        <li><button type="button" id="id-settings">Settings</button></li>
+        <li><button type="button" id="id-help-about">Help and About</button></li>
+      </ul>
+    </div>
+    <div id="game-play" class="screen">
+      <canvas id="game-canvas" width="800" height="700"></canvas>
+    </div>
+    <div id="high-scores" class="screen">
+      <h1>High Scores</h1>
+      <div id="score-vals">
+
+      </div>
+      <button id="high-score-menu" type="button">Main Menu</button>
+    </div>
+    <div id="settings" class="screen">
+      <h1>Key Bindings:</h1>
+      <p>Do NOT assign two actions to the same key</p>
+      <ul id="key-bindings">
+
+      </ul>
+      <br>
+      <button id="settings-menu" type="button">Main
+        Menu</button>
+    </div>
+    <div id="help-about" class="screen">
+      <h2>Gameplay</h2>
+      <button id="help-about-menu" type="button">Main Menu</button>
+      <p>Help all the frogs cross the road to get to their home pads.</p>
+      <p>Tip: Watch out for water hazards!</p>
+      <h3><u>About</u></h3>
+      <h4>Developed by: Jake Cook</h4>
+    </div>
+  </div>
+
+  <script data-main="scripts/loader" src="scripts/require.js"></script>
+
+</body>
+
+</html>

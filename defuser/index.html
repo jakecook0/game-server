@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/game.css">
+  <title>Bombs</title>
+</head>
+
+<body onload="MyGame.game.initialize();">
+  <script type="text/javascript">
+    let MyGame = {
+      screens: {},
+      input: {},
+      objects: { manager: {}, objs: [] },
+      render: {},
+    };
+  </script>
+  <div id="game">
+    <div id="main-menu" class="screen">
+      <ul class="menu">
+        <li><button type="button" id="id-new-game">New Game</button></li>
+        <li><button type="button" id="id-high-scores">High Scores</button></li>
+        <li><button type="button" id="id-help-about">Help and About</button></li>
+      </ul>
+    </div>
+    <div id="game-play" class="screen">
+      <canvas id="game-canvas" width="800" height="600"></canvas>
+      <!-- <button id="game-play-menu" type="button">Main Menu</button> -->
+    </div>
+    <div id="high-scores" class="screen">
+      <h1>High Scores</h1>
+      <button id="high-score-menu" type="button">Main Menu</button>
+      <div id="score-vals">
+
+      </div>
+    </div>
+    <div id="help-about" class="screen">
+      <h2>Gameplay</h2>
+      <button id="help-about-menu" type="button">Main Menu</button>
+      <p>Defuse all the bombs before their time runs out!</p>
+      <h3><u>About</u></h3>
+      <h4>Developed by:</h4>
+      <h4>Jake Cook</h4>
+    </div>
+  </div>
+  <!-- Load objects, inputs, resources first -->
+  <script src="scripts/random.js " charset="utf-8"></script>
+  <script src="scripts/input-keyboard.js" charset="utf-8"></script>
+  <script src="scripts/input-mouse.js" charset="utf-8"></script>
+  <!-- <script src="scripts/objects/particles.js" charset="utf-8"></script> -->
+  <script src="scripts/rendering/graphics.js" charset="utf-8"></script>
+  <script src="scripts/objects/countdown.js" charset="utf-8"></script>
+  <script src="scripts/objects/bombs.js" charset="utf-8"></script>
+  <script src="scripts/objects/overlays.js" charset="utf-8"></script>
+  <script src="scripts/objects/object-manager.js" charset="utf-8"></script>
+  <!-- <script src="scripts/sounds.js" charset="utf-8"></script> -->
+  <script src="scripts/storage.js" charset="utf-8"></script>
+  <script src="scripts/game.js" charset="utf-8"></script>
+  <script src="scripts/gamemodel.js" charset="utf-8"></script>
+
+
+  <!-- <script src="scripts/rendering/background.js" charset="utf-8"></script> -->
+  <!-- <script src="scripts/rendering/particles.js" charset="utf-8"></script> -->
+  <!-- <script src="scripts/rendering/text.js" charset="utf-8"></script> -->
+
+  <!-- Load screens -->
+  <script src="scripts/screens/mainmenu.js" charset="utf-8"></script>
+  <script src="scripts/screens/highscores.js" charset="utf-8"></script>
+  <script src="scripts/screens/help-about.js" charset="utf-8"></script>
+  <script src="scripts/screens/gameplay.js" charset="utf-8"></script>
+
+
+</body>
+
+</html>

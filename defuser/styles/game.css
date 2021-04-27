@@ -1,0 +1,85 @@
+
+body {
+  margin: 0;
+}
+
+#game div h1 {
+  font-size: 1em;
+  text-align: center;
+}
+
+#game {
+  margin: auto;
+  display: block;
+  width: 800px;
+  height: 600px;
+  border-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 1px;
+  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(13, 4, 134); */
+  font-size: 40px;
+}
+
+#game .screen {
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(80,150,250); */
+  background-image: url('../assets/Background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+#game .screen.active {
+  display: block;
+  text-align: center;
+}
+
+#game div p {
+  font-size: 0.5em;
+}
+
+#about p {
+  text-align: center;
+}
+
+#main-menu {
+  padding-top: 1em;
+  cursor: pointer;
+  font-size: 0.75em;
+  /* text-align: center; */
+}
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+    color: rgb(255, 255, 255);
+    width: 10em;
+    height: 1.5em;
+    background: rgb(223, 116, 16);
+    border: 0.1em solid rgb(120, 0, 16);
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+li {
+  list-style-type: none;
+}
+
+#help-about {
+  padding-top: 1em;
+  color: black;
+  
+}
+
+#settings {
+  padding-top: 1em;
+  color: black;
+}
+
+#high-scores {
+  padding-top: 1em;
+  color: black;
+}
+
